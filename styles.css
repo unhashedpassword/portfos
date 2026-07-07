@@ -327,8 +327,6 @@ h2 {
 .stat-pre {
   font-size: 1rem;
   font-weight: 500;
-  align-self: flex-start;
-  margin-top: 4px;
 }
 .stat-num {
   font-size: 2.8rem;
@@ -372,6 +370,7 @@ h2 {
    ========================================================= */
 .objects-section { padding: 20px 24px 100px; }
 .objects-card {
+  position: relative;
   background: linear-gradient(115deg, var(--teal-800) 45%, var(--orange-500) 130%);
   border-radius: var(--radius-lg);
   padding: 56px 60px 60px;
@@ -382,7 +381,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px 60px;
-  margin-bottom: 42px;
+  margin-bottom: 6px;
 }
 .objects-list li {
   position: relative;
@@ -401,14 +400,14 @@ h2 {
   border-radius: 50%;
   background: var(--orange-400);
 }
-.objects-card {
-  display: flex;
-  flex-direction: column;
-}
 .objects-card .btn {
-  align-self: flex-end;
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  transform: translateY(50%);
   background: linear-gradient(180deg, var(--orange-400), var(--orange-600));
   color: var(--white);
+  box-shadow: var(--shadow-soft);
 }
 
 /* =========================================================
