@@ -64,10 +64,11 @@
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <svg class="hero-logo-mark" width="90" height="90" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M17 2 L32 30 H19 L17 24 L15 30 H2 Z" fill="currentColor"/>
-      </svg>
-      <h1 class="hero-title">UTHLOR</h1>
+      <h1 class="hero-title">
+        <svg class="hero-logo-mark" width="70" height="70" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 2 L32 30 H19 L17 24 L15 30 H2 Z" fill="currentColor"/>
+        </svg><span>UTHLOR</span>
+      </h1>
       <p class="hero-tagline">ваше творчество под надёжной защитой</p>
     </div>
   </section>
@@ -76,8 +77,9 @@
   <section class="stats-strip">
     <div class="container stats-inner">
       <div class="stat stat-teal">
+        <span class="stat-pre">Более</span>
         <span class="stat-num">40</span>
-        <span class="stat-label">Более квалифицированных специолистов</span>
+        <span class="stat-label">квалифицированных специалистов</span>
       </div>
       <a href="#contact-form" class="stat stat-orange">
         <span class="stat-label">
@@ -150,28 +152,26 @@
     <p class="contact-sub">Наши менеджеры свяжутся с вами в течении 5 минут</p>
 
     <form class="contact-form" id="leadForm" novalidate>
-      <div class="form-row">
-        <div class="field">
-          <label for="name" class="visually-hidden">Ф.И.О.</label>
-          <input type="text" id="name" name="name" placeholder="Ф.И.О." autocomplete="name">
-        </div>
-        <div class="field">
-          <label for="phone" class="visually-hidden">Номер телефона</label>
-          <input type="tel" id="phone" name="phone" placeholder="Номер телефона" autocomplete="tel">
-        </div>
+      <div class="field field-name">
+        <label for="name" class="visually-hidden">Ф.И.О.</label>
+        <input type="text" id="name" name="name" placeholder="Ф.И.О." autocomplete="name">
       </div>
-      <div class="form-row">
-        <div class="field">
-          <label for="email" class="visually-hidden">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="email">
-        </div>
-        <div class="field">
-          <label for="message" class="visually-hidden">Опишите ваш вопрос</label>
-          <textarea id="message" name="message" placeholder="Опишите ваш вопрос (не обязательно)..." rows="4"></textarea>
-        </div>
+      <div class="field field-phone">
+        <label for="phone" class="visually-hidden">Номер телефона</label>
+        <input type="tel" id="phone" name="phone" placeholder="Номер телефона" autocomplete="tel">
       </div>
-      <button type="submit" class="btn btn-orange">Отправить</button>
-      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      <div class="field field-email">
+        <label for="email" class="visually-hidden">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="email">
+      </div>
+      <div class="field field-message">
+        <label for="message" class="visually-hidden">Опишите ваш вопрос</label>
+        <textarea id="message" name="message" placeholder="Опишите ваш вопрос (не обязательно)..." rows="4"></textarea>
+      </div>
+      <div class="field-submit">
+        <button type="submit" class="btn btn-orange">Отправить</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </div>
     </form>
   </section>
 
